@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Obras — L&L Construção Civil</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+    <style>
+        .grade-galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.2rem;
+            margin-top: 2rem;
+        }
+        .foto-obra {
+            background: #ddd;
+            height: 220px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.95rem;
+        }
+        .foto-obra span {
+            display: block;
+            font-weight: bold;
+            color: #0F2B42;
+            margin-bottom: 0.5rem;
+        }
+        .legenda {
+            margin-top: 0.7rem;
+            font-size: 0.9rem;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="logo">
+            <h1>L&L <span>Construção Civil</span></h1>
+        </div>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="sobre.html">Sobre Nós</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="galeria.html">Obras</a>
+            <a href="orcamento.html">Orçamento</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </div>
+</header>
+
+<section class="pagina-cabecalho">
+    <h2>Obras Realizadas</h2>
+    <p>Confira alguns dos nossos trabalhos</p>
+</section>
+
+<section class="conteudo-pagina">
+    <div class="container">
+        <h3>Nosso Trabalho em Imagens</h3>
+        <p>Veja projetos que entregamos com qualidade e dedicação. Substitua os nomes abaixo pelas fotos das suas obras:</p>
+
+        <div class="grade-galeria">
+            <div>
+                <div class="foto-obra">
+                    <span>obra1.jpg</span>
+                    Residência — Gravataí/RS
+                </div>
+                <p class="legenda">🏠 Casa de 2 quartos — Construção completa</p>
+            </div>
+            <div>
+                <div class="foto-obra">
+                    <span>obra2.jpg</span>
+                    Comercial — Porto Alegre/RS
+                </div>
+                <p class="legenda">🏢 Loja comercial — Reforma e acabamento</p>
+            </div>
+            <div>
+                <div class="foto-obra">
+                    <span>obra3.jpg</span>
+                    Residência — Cachoeirinha/RS
+                </div>
+                <p class="legenda">🏠 Sobrado — Ampliação e reforma</p>
+            </div>
+            <div>
+                <div class="foto-obra">
+                    <span>obra4.jpg</span>
+                    Galpão — Região Metropolitana
+                </div>
+                <p class="legenda">🏗️ Galpão industrial — Estrutura</p>
+            </div>
+            <div>
+                <div class="foto-obra">
+                    <span>obra5.jpg</span>
+                    Residência — Gravataí/RS
+                </div>
+                <p class="legenda">🎨 Acabamentos — Pintura e revestimentos</p>
+            </div>
+            <div>
+                <div class="foto-obra">
+                    <span>obra6.jpg</span>
+                    Obra em andamento
+                </div>
+                <p class="legenda">🚧 Acompanhamento de obra — Etapa de estrutura</p>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 3rem;">
+            <h3>Quer ver seu projeto aqui?</h3>
+            <p>Entre em contato e vamos construir juntos!</p>
+            <a href="orcamento.html" class="btn">Solicitar Orçamento</a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2026 L&L Construção Civil — Todos os direitos reservados.</p>
+        <p>Contato: (51) 9XXXX-XXXX | Gravataí — RS</p>
+    </div>
+</footer>
+
+<a href="https://wa.me/519XXXXXXXX" target="_blank" class="whatsapp-flutuante">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+</body>
+</html>
