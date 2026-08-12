@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitar Orçamento — L&L Construção Civil</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+    <style>
+        .form-group {
+            margin-bottom: 1.2rem;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.4rem;
+            font-weight: 600;
+            color: #0F2B42;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 1rem;
+        }
+        button.btn {
+            font-size: 1.1rem;
+            width: 100%;
+        }
+        .form-container {
+            max-width: 700px;
+            margin: 0 auto;
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .dica {
+            background: #E8F4FD;
+            padding: 1rem;
+            border-radius: 6px;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #1E6091;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="logo">
+            <h1>L&L <span>Construção Civil</span></h1>
+        </div>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="sobre.html">Sobre Nós</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="galeria.html">Obras</a>
+            <a href="orcamento.html">Orçamento</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </div>
+</header>
+
+<section class="pagina-cabecalho">
+    <h2>Solicitar Orçamento</h2>
+    <p>Descreva seu projeto e nós entraremos em contato</p>
+</section>
+
+<section class="conteudo-pagina" style="background: #f0f4f8;">
+    <div class="container">
+        <div class="form-container">
+            <div class="dica">
+                💡 <strong>Dica:</strong> Quanto mais detalhes você der, mais preciso será o nosso orçamento!
+            </div>
+
+            <form action="https://wa.me/519XXXXXXXX" method="get" target="_blank">
+                <div class="form-group">
+                    <label for="nome">Seu Nome *</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefone">WhatsApp / Telefone *</label>
+                    <input type="tel" id="telefone" name="telefone" required placeholder="(51) 9XXXX-XXXX">
+                </div>
+
+                <div class="form-group">
+                    <label for="tipo">Tipo de Serviço *</label>
+                    <select id="tipo" name="tipo" required>
+                        <option value="">Selecione...</option>
+                        <option value="Construção Residencial">Construção Residencial</option>
+                        <option value="Construção Comercial">Construção Comercial</option>
+                        <option value="Reforma">Reforma / Ampliação</option>
+                        <option value="Acabamento">Acabamentos</option>
+                        <option value="Outro">Outro / Não sei ainda</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="cidade">Cidade da Obra *</label>
+                    <input type="text" id="cidade" name="cidade" required placeholder="Ex: Gravataí — RS">
+                </div>
+
+                <div class="form-group">
+                    <label for="area">Área aproximada (m²)</label>
+                    <input type="text" id="area" name="area" placeholder="Ex: 100m²">
+                </div>
+
+                <div class="form-group">
+                    <label for="mensagem">Descrição do Projeto *</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" required placeholder="Conte-nos o que você precisa..."></textarea>
+                </div>
+
+                <button type="submit" class="btn">
+                    <i class="fab fa-whatsapp"></i> Enviar pelo WhatsApp
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2026 L&L Construção Civil — Todos os direitos reservados.</p>
+        <p>Contato: (51) 9XXXX-XXXX | Gravataí — RS</p>
+    </div>
+</footer>
+
+<a href="https://wa.me/519XXXXXXXX" target="_blank" class="whatsapp-flutuante">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+</body>
+</html>
