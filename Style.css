@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --azul-escuro: #0F2B42;
+    --azul-destaque: #1E6091;
+    --laranja: #E67E22;
+    --cinza-claro: #F5F5F5;
+    --texto-escuro: #333333;
+    --branco: #FFFFFF;
+}
+
+body {
+    color: var(--texto-escuro);
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Cabeçalho */
+header {
+    background: var(--azul-escuro);
+    color: var(--branco);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo h1 {
+    font-size: 1.8rem;
+}
+
+.logo span {
+    color: var(--laranja);
+}
+
+nav a {
+    color: var(--branco);
+    text-decoration: none;
+    margin-left: 1.5rem;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--laranja);
+}
+
+/* Banner Principal */
+.banner {
+    background: linear-gradient(rgba(15, 43, 66, 0.85), rgba(15, 43, 66, 0.85)), url('banner-principal.jpg') center/cover no-repeat;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: var(--branco);
+    padding: 2rem;
+}
+
+.banner-conteudo h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.banner-conteudo p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    background: var(--laranja);
+    color: var(--branco);
+    padding: 0.9rem 2rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #d35400;
+}
+
+.btn-2 {
+    background: var(--azul-destaque);
+}
+
+.btn-2:hover {
+    background: #154360;
+}
+
+/* Destaques */
+.destaques {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.destaques h3 {
+    font-size: 2rem;
+    color: var(--azul-escuro);
+    margin-bottom: 3rem;
+}
+
+.grid-destaques {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.item {
+    padding: 2rem;
+}
+
+.item i {
+    font-size: 3rem;
+    color: var(--laranja);
+    margin-bottom: 1rem;
+}
+
+/* Serviços Resumo */
+.servicos-resumo {
+    background: var(--cinza-claro);
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.servicos-resumo h3 {
+    font-size: 2rem;
+    color: var(--azul-escuro);
+    margin-bottom: 1rem;
+}
+
+.servicos-resumo p {
+    max-width: 700px;
+    margin: 0 auto 2rem;
+    font-size: 1.1rem;
+}
+
+/* Rodapé */
+footer {
+    background: var(--azul-escuro);
+    color: var(--branco);
+    padding: 2rem 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+/* WhatsApp Flutuante */
+.whatsapp-flutuante {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: #25D366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    z-index: 200;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* Páginas internas */
+.pagina-cabecalho {
+    background: linear-gradient(rgba(15, 43, 66, 0.9), rgba(15, 43, 66, 0.9)), url('banner-interno.jpg') center/cover no-repeat;
+    padding: 4rem 0;
+    text-align: center;
+    color: white;
+}
+
+.pagina-cabecalho h2 {
+    font-size: 2.2rem;
+}
+
+.conteudo-pagina {
+    padding: 3rem 0;
+}
+
+.conteudo-pagina h3 {
+    color: var(--azul-escuro);
+    margin: 1.5rem 0 1rem;
+    font-size: 1.5rem;
+}
+
+.lista-servicos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.servico-item {
+    background: var(--cinza-claro);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid var(--laranja);
+}
+
+.contato-info p {
+    margin: 0.8rem 0;
+    font-size: 1.05rem;
+}
+
+.contato-info i {
+    color: var(--laranja);
+    width: 25px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav {
+        margin-top: 1rem;
+    }
+    nav a {
+        margin: 0 0.7rem;
+    }
+    .banner-conteudo h2 {
+        font-size: 1.8rem;
+    }
+}
