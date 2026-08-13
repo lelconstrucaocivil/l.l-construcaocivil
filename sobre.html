@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre Nós — L&L Construção Civil</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
 </head>
@@ -12,12 +13,17 @@
 <header>
     <div class="container">
         <div class="logo">
-            <h1>L&L <span>Construção Civil</span></h1>
+            <a href="index.html">
+                <img src="logo.jpg" alt="L&L Construção Civil" class="logo-img">
+            </a>
+            <h1 class="sr-only">L&L Construção Civil</h1>
         </div>
-        <nav>
+        <nav aria-label="Menu principal">
             <a href="index.html">Início</a>
             <a href="sobre.html">Sobre Nós</a>
             <a href="servicos.html">Serviços</a>
+            <a href="galeria.html">Obras</a>
+            <a href="orcamento.html">Orçamento</a>
             <a href="contato.html">Contato</a>
         </nav>
     </div>
@@ -31,8 +37,8 @@
 <section class="conteudo-pagina">
     <div class="container">
         <h3>Nossa História</h3>
-        <p>A L&L Construção Civil nasceu com o propósito de entregar obras com qualidade, transparência e compromisso. Fundada em Gravataí — RS, crescemos com base no trabalho próximo aos clientes e na busca contínua por melhoria técnica.</p>
-        <p>Ao longo dos anos, atuamos em pequenas e grandes obras residenciais e comerciais, sempre priorizando prazos, segurança e acabamento. Nossa equipe é formada por profissionais qualificados, com experiência em todos os estágios da construção, desde a fundação até o acabamento.</p>
+        <p>A L&L Construção Civil nasceu com o propósito de entregar obras com qualidade, transparência e compromisso. Fundada em Gravataí — RS, crescemos com base no trabalho próximo aos clientes e na dedicação da nossa equipe.</p>
+        <p>Ao longo dos anos, atuamos em pequenas e grandes obras residenciais e comerciais, sempre priorizando prazos, segurança e acabamento. Nossa equipe é formada por profissionais qualificados e comprometidos.</p>
 
         <h3>Missão</h3>
         <p>Entregar soluções em construção civil com excelência, dentro do prazo e do orçamento, garantindo segurança e satisfação total de quem confia em nós.</p>
@@ -59,12 +65,26 @@
 <footer>
     <div class="container">
         <p>&copy; 2026 L&L Construção Civil — Todos os direitos reservados.</p>
-        <p>Contato: (51) 98162-1606 | Gravataí — RS</p>
+        <p><i class="fab fa-whatsapp" aria-hidden="true"></i> WhatsApp: (51) 98162-1606</p>
+        <p><i class="fas fa-envelope" aria-hidden="true"></i> E-mail: L.Lconstrucaocivil666@gmail.com</p>
+        <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Gravataí — RS</p>
+
+        <div class="pagamentos" aria-label="Formas de pagamento">
+            <h4>Formas de pagamento</h4>
+            <div class="pagamentos-lista">
+                <div class="pagamento"><i class="fas fa-credit-card" aria-hidden="true"></i> Cartão</div>
+                <div class="pagamento"><i class="fas fa-barcode" aria-hidden="true"></i> Boleto</div>
+                <div class="pagamento"><i class="fas fa-exchange-alt" aria-hidden="true"></i> Transferência</div>
+                <div class="pagamento"><i class="fas fa-qrcode" aria-hidden="true"></i> PIX</div>
+            </div>
+        </div>
     </div>
 </footer>
 
-<a href="https://wa.me/5551981621606?text=Ol%C3%A1!%20Visitei%20o%20site%20da%20L%26L%20Constru%C3%A7%C3%A3o%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer" class="whatsapp-flutuante">
-    <i class="fab fa-whatsapp"></i>
+<!-- Botão WhatsApp flutuante -->
+<a href="https://wa.me/5551981621606?text=Ol%C3%A1%21%20Visitei%20o%20site%20da%20L%26L%20Constru%C3%A7%C3%A3o%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer" class="whatsapp-flutuante">
+    <i class="fab fa-whatsapp" aria-hidden="true"></i>
+    <span class="sr-only">Abrir WhatsApp</span>
 </a>
 
 </body>
