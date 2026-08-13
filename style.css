@@ -239,6 +239,8 @@ footer {
     color: var(--branco);
     padding: 2rem 0;
     text-align: center;
+    position: relative; /* para ficar acima do overlay */
+    z-index: 2;
 }
 
 footer p {
@@ -298,4 +300,54 @@ footer p {
     .whatsapp-flutuante { width: 50px; height: 50px; font-size: 1.6rem; bottom: 18px; right: 18px; }
     .logo img { height: 46px; max-height: 50px; }
     .pagamentos-lista { gap: 0.5rem; font-size: 0.9rem; }
+}
+
+/* --- Novas regras: fundo com banner-galeria que começa após o banner-interno e vai até depois do rodapé --- */
+.galeria-fundo {
+  background: url('banner-galeria.png') center/cover no-repeat;
+  background-attachment: scroll; /* mobile-friendly */
+  position: relative; /* cria contexto para o overlay */
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+/* Overlay para melhorar contraste sobre o banner (leve-médio) */
+.galeria-fundo::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Garante que conteúdo e footer fiquem acima do overlay */
+.galeria-fundo .container,
+.galeria-fundo footer{
+  position: relative;
+  z-index: 1;
+}
+
+/* Os cartões da galeria ficam com fundo quase opaco para não perder contraste */
+.galeria-fundo .foto-obra {
+  background: rgba(255,255,255,0.95);
+}
+
+/* Espaçamento extra para a grade quando sobre o banner */
+.galeria-fundo .grade-galeria {
+  padding: 2rem 0;
+}
+
+/* Pequeno ajuste para evitar que imagens pareçam transparentes sobre o background */
+.galeria-fundo .foto-obra img { border-radius: 6px; }
+
+/* Mapa/Planeta Terra - estilo para imagem do planeta */
+.map-earth img{
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+  display: block;
+  margin-top: 1rem;
+  border-radius: 999px; /* torna circular em tamanhos quadrados */
+  box-shadow: 0 6px 20px rgba(0,0,0,0.35);
 }
