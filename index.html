@@ -14,9 +14,12 @@
 <header>
     <div class="container">
         <div class="logo">
-            <h1>L&L <span>Construção Civil</span></h1>
+            <a href="index.html">
+                <img src="logo.jpg" alt="L&L Construção Civil" class="logo-img">
+            </a>
+            <h1 class="sr-only">L&L Construção Civil</h1>
         </div>
-        <nav>
+        <nav aria-label="Menu principal">
             <a href="index.html">Início</a>
             <a href="sobre.html">Sobre Nós</a>
             <a href="servicos.html">Serviços</a>
@@ -40,17 +43,17 @@
         <h3>Por que escolher a L&L?</h3>
         <div class="grid-destaques">
             <div class="item">
-                <i class="fas fa-hammer"></i>
+                <i class="fas fa-hammer" aria-hidden="true"></i>
                 <h4>Qualidade</h4>
                 <p>Materiais selecionados e mão de obra experiente</p>
             </div>
             <div class="item">
-                <i class="fas fa-clock"></i>
+                <i class="fas fa-clock" aria-hidden="true"></i>
                 <h4>Prazo</h4>
                 <p>Cumprimos cronograma sem atrasos</p>
             </div>
             <div class="item">
-                <i class="fas fa-shield-alt"></i>
+                <i class="fas fa-shield-alt" aria-hidden="true"></i>
                 <h4>Segurança</h4>
                 <p>Projetos dentro das normas técnicas</p>
             </div>
@@ -69,15 +72,28 @@
 <footer>
     <div class="container">
         <p>&copy; 2026 L&L Construção Civil — Todos os direitos reservados.</p>
-        <p><i class="fab fa-whatsapp"></i> WhatsApp: (51) 98162-1606</p>
-        <p><i class="fas fa-envelope"></i> E-mail: L.Lconstrucaocivil666@gmail.com</p>
-        <p><i class="fas fa-map-marker-alt"></i> Gravataí — RS</p>
+        <p><i class="fab fa-whatsapp" aria-hidden="true"></i> WhatsApp: (51) 98162-1606</p>
+        <p><i class="fas fa-envelope" aria-hidden="true"></i> E-mail: L.Lconstrucaocivil666@gmail.com</p>
+        <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Gravataí — RS</p>
+
+        <!-- Formas de pagamento -->
+        <div class="pagamentos" aria-label="Formas de pagamento">
+            <h4>Formas de pagamento</h4>
+            <div class="pagamentos-lista">
+                <div class="pagamento"><i class="fas fa-credit-card" aria-hidden="true"></i> Cartão</div>
+                <div class="pagamento"><i class="fas fa-barcode" aria-hidden="true"></i> Boleto</div>
+                <div class="pagamento"><i class="fas fa-exchange-alt" aria-hidden="true"></i> Transferência</div>
+                <div class="pagamento"><i class="fas fa-qrcode" aria-hidden="true"></i> PIX</div>
+            </div>
+        </div>
+
     </div>
 </footer>
 
 <!-- Botão WhatsApp Flutuante -->
 <a href="https://wa.me/5551981621606?text=Ol%C3%A1%21%20Visitei%20o%20site%20da%20L%26L%20Constru%C3%A7%C3%A3o%20e%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener noreferrer" class="whatsapp-flutuante">
-    <i class="fab fa-whatsapp"></i>
+    <i class="fab fa-whatsapp" aria-hidden="true"></i>
+    <span class="sr-only">Abrir WhatsApp</span>
 </a>
 
 </body>
