@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aluguel de Ferramentas — L&L Construção Civil</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+    <style>
+        .grade-galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.2rem;
+            margin-top: 2rem;
+        }
+        .foto-obra {
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+        }
+        .foto-obra img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            display: block;
+        }
+        .legenda {
+            padding: 0.8rem 1rem 1rem 1rem;
+            font-size: 0.95rem;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="logo">
+            <h1>L&L <span>Construção Civil</span></h1>
+        </div>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="sobre.html">Sobre Nós</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="galeria.html">Obras</a>
+            <a href="aluguel.html">Aluguel</a>
+            <a href="orcamento.html">Orçamento</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </div>
+</header>
+
+<section class="pagina-cabecalho">
+    <h2>Aluguel de Ferramentas</h2>
+    <p>Equipamentos e máquinas para sua obra — alugue com segurança e praticidade.</p>
+</section>
+
+<section class="conteudo-pagina">
+    <div class="container">
+        <h3>Nossos Equipamentos para Aluguel</h3>
+        <p>Oferecemos uma variedade de ferramentas e máquinas para obras de todos os portes. Confira abaixo alguns dos itens disponíveis para aluguel.</p>
+
+        <div class="grade-galeria">
+            <div class="foto-obra">
+                <img src="aluguel-motossera.png" alt="Motosserra para obras" loading="lazy">
+                <p class="legenda">🪚 Motosserra — Aluguel diário/semana</p>
+            </div>
+
+            <div class="foto-obra">
+                <img src="aluguel-ferram.png" alt="Conjunto de ferramentas" loading="lazy">
+                <p class="legenda">🔧 Conjunto de ferramentas — Kits variados</p>
+            </div>
+
+            <div class="foto-obra">
+                <img src="aluguel-retro.png" alt="Retroescavadeira" loading="lazy">
+                <p class="legenda">🟠 Retroescavadeira — Para escavações e movimentação</p>
+            </div>
+
+            <div class="foto-obra">
+                <img src="aluguel-andaime.png" alt="Andaime modular" loading="lazy">
+                <p class="legenda">🪜 Andaimes — Locação por dias ou semanas</p>
+            </div>
+
+            <div class="foto-obra">
+                <img src="aluguel-caçamba.png" alt="Caçamba para entulho" loading="lazy">
+                <p class="legenda">🗑️ Caçamba para entulho — Retirada e entrega</p>
+            </div>
+
+            <div class="foto-obra">
+                <img src="aluguel-entulho.png" alt="Transporte de entulho" loading="lazy">
+                <p class="legenda">🚛 Transporte e remoção de entulho</p>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 3rem;">
+            <h3>Precisa alugar um equipamento?</h3>
+            <p>Entre em contato conosco para verificar disponibilidade, preços e condições.</p>
+            <a href="contato.html" class="btn">Fale Conosco</a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2026 L&L Construção Civil — Todos os direitos reservados.</p>
+        <p>Contato: (51) 98162-1606 | Gravataí — RS</p>
+    </div>
+</footer>
+
+<a href="https://wa.me/5551981621606" target="_blank" class="whatsapp-flutuante" rel="noopener noreferrer">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+</body>
+</html>
