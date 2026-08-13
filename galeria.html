@@ -3,99 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galeria de Obras — L&L Construção Civil</title>
+    <meta name="description" content="Galeria de obras — L&L Construção Civil">
+    <title>Obras — L&L Construção Civil</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
-    <style>
-        .grade-galeria {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1.2rem;
-            margin-top: 2rem;
-        }
-        .foto-obra {
-            background: #fff;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-        }
-        .foto-obra img {
-            width: 100%;
-            height: 220px;
-            object-fit: cover;
-            display: block;
-        }
-        .legenda {
-            padding: 0.8rem 1rem 1rem 1rem;
-            font-size: 0.95rem;
-            color: #555;
-        }
-    </style>
 </head>
 <body>
 
 <header>
     <div class="container">
         <div class="logo">
-            <h1>L&L <span>Construção Civil</span></h1>
+            <a href="index.html" aria-label="L&L Construção Civil — Início"><img src="logo.jpg" alt="L&L Construção Civil"></a>
         </div>
-        <nav>
-            <a href="index.html">Início</a>
-            <a href="sobre.html">Sobre Nós</a>
-            <a href="servicos.html">Serviços</a>
-            <a href="galeria.html">Obras</a>
-            <a href="orcamento.html">Orçamento</a>
-            <a href="contato.html">Contato</a>
+        <nav aria-label="Menu principal">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="galeria.html">Obras</a></li>
+                <li><a href="orcamento.html">Orçamento</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
         </nav>
     </div>
 </header>
 
 <section class="pagina-cabecalho">
-    <h2>Obras Realizadas</h2>
-    <p>Confira alguns dos nossos trabalhos</p>
+    <h2>Obras</h2>
+    <p>Projetos executados com qualidade e atenção aos detalhes</p>
 </section>
 
 <section class="conteudo-pagina">
     <div class="container">
-        <h3>Nosso Trabalho em Imagens</h3>
-        <p>Veja projetos que entregamos com qualidade e dedicação. Substitua as imagens abaixo pelas fotos das suas obras quando estiver pronto.</p>
-
-        <div class="grade-galeria">
+        <div class="grid-destaques">
             <div class="foto-obra">
-                <img src="https://via.placeholder.com/800x600?text=Obra+1" alt="Residência — Gravataí/RS" loading="lazy">
-                <p class="legenda">🏠 Casa de 2 quartos — Construção completa</p>
+                <img src="obra1.jpg" alt="Obra 1">
+                <div class="legenda">Reforma residencial — Gravataí</div>
             </div>
-
             <div class="foto-obra">
-                <img src="https://via.placeholder.com/800x600?text=Obra+2" alt="Comercial — Porto Alegre/RS" loading="lazy">
-                <p class="legenda">🏢 Loja comercial — Reforma e acabamento</p>
+                <img src="obra2.jpg" alt="Obra 2">
+                <div class="legenda">Construção de sobrado — Porto Alegre</div>
             </div>
-
             <div class="foto-obra">
-                <img src="https://via.placeholder.com/800x600?text=Obra+3" alt="Residência — Cachoeirinha/RS" loading="lazy">
-                <p class="legenda">🏠 Sobrado — Ampliação e reforma</p>
+                <img src="obra3.jpg" alt="Obra 3">
+                <div class="legenda">Ampliação comercial — Região Metropolitana</div>
             </div>
-
-            <div class="foto-obra">
-                <img src="https://via.placeholder.com/800x600?text=Obra+4" alt="Galpão — Região Metropolitana" loading="lazy">
-                <p class="legenda">🏗️ Galpão industrial — Estrutura</p>
-            </div>
-
-            <div class="foto-obra">
-                <img src="https://via.placeholder.com/800x600?text=Obra+5" alt="Residência — Gravataí/RS (Acabamentos)" loading="lazy">
-                <p class="legenda">🎨 Acabamentos — Pintura e revestimentos</p>
-            </div>
-
-            <div class="foto-obra">
-                <img src="https://via.placeholder.com/800x600?text=Obra+6" alt="Obra em andamento — etapa de estrutura" loading="lazy">
-                <p class="legenda">🚧 Acompanhamento de obra — Etapa de estrutura</p>
-            </div>
-        </div>
-
-        <div style="text-align: center; margin-top: 3rem;">
-            <h3>Quer ver seu projeto aqui?</h3>
-            <p>Entre em contato e vamos construir juntos!</p>
-            <a href="orcamento.html" class="btn">Solicitar Orçamento</a>
         </div>
     </div>
 </section>
@@ -103,12 +55,23 @@
 <footer>
     <div class="container">
         <p>&copy; 2026 L&L Construção Civil — Todos os direitos reservados.</p>
-        <p>Contato: (51) 98162-1606 | Gravataí — RS</p>
+        <p><a href="tel:+5551981621606">WhatsApp/Telefone: (51) 98162-1606</a></p>
+
+        <div class="pagamentos" aria-label="Formas de pagamento aceitas">
+            <h4>Formas de Pagamento</h4>
+            <div class="pagamentos-lista">
+                <span class="pagamento"><i class="fa-solid fa-qrcode" aria-hidden="true"></i> PIX</span>
+                <span class="pagamento"><i class="fa-solid fa-credit-card" aria-hidden="true"></i> Cartão (Visa, Master)</span>
+                <span class="pagamento"><i class="fa-solid fa-barcode" aria-hidden="true"></i> Boleto</span>
+            </div>
+            <p style="font-size:0.85rem; margin-top:0.6rem;">Chave PIX: não divulgada — informe-se por telefone/WhatsApp</p>
+        </div>
     </div>
 </footer>
 
-<a href="https://wa.me/5551981621606" target="_blank" class="whatsapp-flutuante" rel="noopener noreferrer">
-    <i class="fab fa-whatsapp"></i>
+<!-- Botão WhatsApp flutuante -->
+<a class="whatsapp-flutuante" href="https://wa.me/5551981621606?text=Ol%C3%A1!%20Visitei%20o%20site%20da%20L%26L%20Constru%C3%A7%C3%A3o%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer" aria-label="Chamar no WhatsApp">
+    <i class="fab fa-whatsapp" aria-hidden="true"></i>
 </a>
 
 </body>
