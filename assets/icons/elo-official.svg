@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Elo official logo simplified -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 80">
+  <rect width="200" height="80" rx="8" fill="#032b60"/>
+  <text x="50" y="52" font-family="Rubik, Arial, sans-serif" font-size="36" fill="#FFD400" font-weight="700">ELO</text>
+</svg>

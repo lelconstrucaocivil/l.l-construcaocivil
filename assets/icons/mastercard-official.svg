@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Mastercard official symbol simplified -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 100">
+  <circle cx="60" cy="50" r="36" fill="#EB001B"/>
+  <circle cx="100" cy="50" r="36" fill="#F79E1B"/>
+</svg>
