@@ -14,16 +14,17 @@ header p{color:#ddd}
 nav{background:#444;padding:12px;text-align:center}
 nav a{color:white;text-decoration:none;font-weight:bold;margin:5px 8px;display:inline-block}
 nav a:hover{color:#ffc107}
-section{max-width:1100px;margin:auto;padding:50px 20px}
+section{max-width:1200px;margin:auto;padding:50px 20px}
 .titulo{text-align:center;margin-bottom:35px}
 .titulo h2{font-size:32px;color:#222}
 .titulo p{color:#666}
-.materiais{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
-.material{background:white;padding:25px;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,.1);border-left:4px solid #ffc107}
-.material h3{margin-bottom:10px;color:#222;font-size:18px}
-.material p{color:#666;margin-bottom:8px;font-size:14px}
-.preco{font-size:20px;font-weight:bold;color:#ffc107;margin-top:15px}
-.icone{font-size:40px;margin-bottom:10px}
+.materiais{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px}
+.material{background:white;padding:20px;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,.1);border-left:4px solid #ffc107;transition:transform 0.3s;display:flex;flex-direction:column;align-items:center;text-align:center}
+.material:hover{transform:translateY(-5px);box-shadow:0 4px 12px rgba(0,0,0,.15)}
+.icone{font-size:50px;margin-bottom:15px;min-height:60px;display:flex;align-items:center;justify-content:center}
+.material h3{margin-bottom:8px;color:#222;font-size:16px}
+.material p{color:#666;margin-bottom:10px;font-size:12px;line-height:1.4}
+.preco{font-size:16px;font-weight:bold;color:#ffc107;margin-top:10px}
 footer{background:#222;color:white;text-align:center;padding:20px;margin-top:30px}
 .contato-info{margin-top:15px;font-size:14px;color:#ddd}
 .botao-whatsapp{display:inline-block;background:#25d366;color:white;padding:10px 20px;border-radius:5px;text-decoration:none;font-weight:bold;margin-top:20px}
@@ -52,8 +53,8 @@ footer{background:#222;color:white;text-align:center;padding:20px;margin-top:30p
 <section>
 
 <div class="titulo">
-<h2>Materiais de Construção</h2>
-<p>Materiais de qualidade essenciais para garantir excelência em nossos serviços.</p>
+<h2>Materiais de Construção Civil</h2>
+<p>Materiais de qualidade essenciais para garantir excelência em nossos projetos e serviços.</p>
 </div>
 
 <div class="materiais">
@@ -61,85 +62,428 @@ footer{background:#222;color:white;text-align:center;padding:20px;margin-top:30p
 <div class="material">
 <div class="icone">🧱</div>
 <h3>Tijolos Cerâmicos</h3>
-<p>Tijolos de alta qualidade para alvenaria em construções residenciais e comerciais. Duráveis e resistentes.</p>
-<div class="preco">R$ 0,80 a R$ 1,20 / unidade</div>
-</div>
-
-<div class="material">
-<div class="icone">🔩</div>
-<h3>Pregos Variados</h3>
-<p>Pregos de aço galvanizado em diversos tamanhos. Resistentes à ferrugem e ideais para fixações seguras.</p>
-<div class="preco">R$ 15,00 a R$ 50,00 / kg</div>
-</div>
-
-<div class="material">
-<div class="icone">🪵</div>
-<h3>Madeira para Construção</h3>
-<p>Madeiras de reflorestamento certificadas. Ideais para estruturas, formas e acabamentos. Várias espécies disponíveis.</p>
-<div class="preco">R$ 800,00 a R$ 2.500,00 / m³</div>
-</div>
-
-<div class="material">
-<div class="icone">🏗️</div>
-<h3>Cimento Portland</h3>
-<p>Cimento de alta resistência para concretos e argamassas. Garantia de qualidade e durabilidade.</p>
-<div class="preco">R$ 35,00 a R$ 45,00 / saco 50kg</div>
-</div>
-
-<div class="material">
-<div class="icone">⛨</div>
-<h3>Areia de Construção</h3>
-<p>Areia natural fina e média para argamassa, concreto e acabamentos. Peneirada e selecionada.</p>
-<div class="preco">R$ 50,00 a R$ 100,00 / m³</div>
-</div>
-
-<div class="material">
-<div class="icone">🪨</div>
-<h3>Brita para Concreto</h3>
-<p>Agregado pétreo de diferentes granulometrias. Essencial para concretos resistentes e estruturais.</p>
-<div class="preco">R$ 60,00 a R$ 120,00 / m³</div>
-</div>
-
-<div class="material">
-<div class="icone">💧</div>
-<h3>Cal Hidratada</h3>
-<p>Cal de alta pureza para argamassas, acabamentos e cações. Compatível com cimentos especiais.</p>
-<div class="preco">R$ 25,00 a R$ 40,00 / saco 20kg</div>
-</div>
-
-<div class="material">
-<div class="icone">📌</div>
-<h3>Parafusos e Porcas</h3>
-<p>Parafusos galvanizados de alta resistência em diversos diâmetros e comprimentos para estruturas.</p>
-<div class="preco">R$ 20,00 a R$ 80,00 / kg</div>
+<p>Alvenaria residencial e comercial. Duráveis e resistentes.</p>
+<div class="preco">R$ 0,80 a R$ 1,20/un</div>
 </div>
 
 <div class="material">
 <div class="icone">🏠</div>
 <h3>Blocos de Concreto</h3>
-<p>Blocos estruturais de concreto pré-moldado. Altas dimensões e resistência para alvenaria.</p>
-<div class="preco">R$ 2,50 a R$ 4,50 / unidade</div>
+<p>Estruturais de concreto pré-moldado com alta resistência.</p>
+<div class="preco">R$ 2,50 a R$ 4,50/un</div>
+</div>
+
+<div class="material">
+<div class="icone">🏗️</div>
+<h3>Cimento Portland CP-III</h3>
+<p>Resistência alta para concretos e argamassas estruturais.</p>
+<div class="preco">R$ 35,00 a R$ 45,00/saco 50kg</div>
+</div>
+
+<div class="material">
+<div class="icone">🏗️</div>
+<h3>Cimento Portland CP-V ARI</h3>
+<p>Cimento de alta resistência inicial para uso especial.</p>
+<div class="preco">R$ 40,00 a R$ 50,00/saco 50kg</div>
+</div>
+
+<div class="material">
+<div class="icone">🏗️</div>
+<h3>Cimento Branco</h3>
+<p>Acabamentos decorativos e argamassas de rejunte.</p>
+<div class="preco">R$ 45,00 a R$ 55,00/saco 50kg</div>
+</div>
+
+<div class="material">
+<div class="icone">⛨</div>
+<h3>Areia Fina</h3>
+<p>Argamassa, concreto e acabamentos. Peneirada e selecionada.</p>
+<div class="preco">R$ 50,00 a R$ 100,00/m³</div>
+</div>
+
+<div class="material">
+<div class="icone">⛨</div>
+<h3>Areia Média</h3>
+<p>Concreto estrutural e argamassas robustas.</p>
+<div class="preco">R$ 55,00 a R$ 105,00/m³</div>
+</div>
+
+<div class="material">
+<div class="icone">⛨</div>
+<h3>Areia Grossa</h3>
+<p>Concreto de alta resistência e acabamentos estruturais.</p>
+<div class="preco">R$ 60,00 a R$ 110,00/m³</div>
+</div>
+
+<div class="material">
+<div class="icone">🪨</div>
+<h3>Brita n° 0</h3>
+<p>Agregado fino para concreto e preparação de base.</p>
+<div class="preco">R$ 50,00 a R$ 100,00/m³</div>
+</div>
+
+<div class="material">
+<div class="icone">🪨</div>
+<h3>Brita n° 1</h3>
+<p>Granulometria média. Essencial para concretos estruturais.</p>
+<div class="preco">R$ 60,00 a R$ 120,00/m³</div>
+</div>
+
+<div class="material">
+<div class="icone">🪨</div>
+<h3>Brita n° 2</h3>
+<p>Agregado graúdo para concreto de alta resistência.</p>
+<div class="preco">R$ 70,00 a R$ 130,00/m³</div>
+</div>
+
+<div class="material">
+<div class="icone">💧</div>
+<h3>Cal Hidratada</h3>
+<p>Argamassas, acabamentos e cações em construção.</p>
+<div class="preco">R$ 25,00 a R$ 40,00/saco 20kg</div>
+</div>
+
+<div class="material">
+<div class="icone">💧</div>
+<h3>Cal Viva</h3>
+<p>Acabamentos especiais e revestimentos em construção histórica.</p>
+<div class="preco">R$ 30,00 a R$ 50,00/saco 20kg</div>
+</div>
+
+<div class="material">
+<div class="icone">🎨</div>
+<h3>Argamassa Convencional</h3>
+<p>Uso geral em alvenaria e revestimentos internos.</p>
+<div class="preco">R$ 35,00 a R$ 50,00/saco 20kg</div>
 </div>
 
 <div class="material">
 <div class="icone">🎨</div>
 <h3>Argamassa Pronta</h3>
-<p>Argamassa pré-dosada com aditivos especiais. Economia de tempo e garantia de qualidade consistente.</p>
-<div class="preco">R$ 40,00 a R$ 60,00 / saco 20kg</div>
+<p>Pré-dosada com aditivos. Economia de tempo e qualidade.</p>
+<div class="preco">R$ 40,00 a R$ 60,00/saco 20kg</div>
+</div>
+
+<div class="material">
+<div class="icone">🎨</div>
+<h3>Argamassa Impermeável</h3>
+<p>Impermeabilização de alicerces e estruturas em contato com água.</p>
+<div class="preco">R$ 50,00 a R$ 70,00/saco 20kg</div>
+</div>
+
+<div class="material">
+<div class="icone">🔩</div>
+<h3>Pregos 15 mm</h3>
+<p>Aço galvanizado resistente à ferrugem. Fixações gerais.</p>
+<div class="preco">R$ 15,00 a R$ 25,00/kg</div>
+</div>
+
+<div class="material">
+<div class="icone">🔩</div>
+<h3>Pregos 25 mm</h3>
+<p>Tamanho médio. Fixações em carpintaria e alvenaria.</p>
+<div class="preco">R$ 15,00 a R$ 30,00/kg</div>
+</div>
+
+<div class="material">
+<div class="icone">🔩</div>
+<h3>Pregos 50 mm</h3>
+<p>Tamanho grande. Fixações estruturais em madeira.</p>
+<div class="preco">R$ 18,00 a R$ 40,00/kg</div>
+</div>
+
+<div class="material">
+<div class="icone">🔩</div>
+<h3>Parafusos de Madeira 3,5 x 45</h3>
+<p>Aço galvanizado. Fixações precisas em estruturas de madeira.</p>
+<div class="preco">R$ 20,00 a R$ 50,00/kg</div>
+</div>
+
+<div class="material">
+<div class="icone">🔩</div>
+<h3>Parafusos de Madeira 5,0 x 60</h3>
+<p>Maior diâmetro. Fixações estruturais em carpintaria.</p>
+<div class="preco">R$ 25,00 a R$ 60,00/kg</div>
+</div>
+
+<div class="material">
+<div class="icone">📌</div>
+<h3>Parafusos de Concreto M8</h3>
+<p>Expansor para fixação em estruturas de concreto.</p>
+<div class="preco">R$ 30,00 a R$ 80,00/kg</div>
+</div>
+
+<div class="material">
+<div class="icone">📌</div>
+<h3>Parafusos de Concreto M10</h3>
+<p>Maior resistência. Fixações estruturais em concreto.</p>
+<div class="preco">R$ 35,00 a R$ 90,00/kg</div>
 </div>
 
 <div class="material">
 <div class="icone">🔗</div>
-<h3>Tela de Aço Galvanizado</h3>
-<p>Telas soldadas para reforço de concreto. Resistência superior e proteção contra corrosão.</p>
-<div class="preco">R$ 150,00 a R$ 300,00 / rolo</div>
+<h3>Porcas Sextavadas</h3>
+<p>Aço galvanizado diversos tamanhos M8 a M16.</p>
+<div class="preco">R$ 20,00 a R$ 80,00/kg</div>
+</div>
+
+<div class="material">
+<div class="icone">🔗</div>
+<h3>Arruelas de Aço</h3>
+<p>Proteção de furos e distribuição de carga de parafusos.</p>
+<div class="preco">R$ 15,00 a R$ 60,00/kg</div>
+</div>
+
+<div class="material">
+<div class="icone">🔗</div>
+<h3>Tela de Aço Galvanizado 2x2</div>
+<p>Malha soldada para reforço de concreto em estruturas.</p>
+<div class="preco">R$ 150,00 a R$ 300,00/rolo</div>
+</div>
+
+<div class="material">
+<div class="icone">🔗</div>
+<h3>Tela de Aço Galvanizado 5x5</h3>
+<p>Malha maior para concreto de menor resistência.</p>
+<div class="preco">R$ 120,00 a R$ 250,00/rolo</div>
+</div>
+
+<div class="material">
+<div class="icone">🪵</div>
+<h3>Madeira Pinus Tratada</h3>
+<p>Estruturas, formas e acabamentos. Resistente à umidade.</p>
+<div class="preco">R$ 800,00 a R$ 1.500,00/m³</div>
+</div>
+
+<div class="material">
+<div class="icone">🪵</div>
+<h3>Madeira Eucalipto</h3>
+<p>Madeira de reflorestamento certificada. Estruturas gerais.</p>
+<div class="preco">R$ 900,00 a R$ 1.800,00/m³</div>
+</div>
+
+<div class="material">
+<div class="icone">🪵</div>
+<h3>Madeira Ipê</h3>
+<p>Madeira nobre de alta resistência. Acabamentos premium.</p>
+<div class="preco">R$ 2.000,00 a R$ 3.500,00/m³</div>
+</div>
+
+<div class="material">
+<div class="icone">🏘️</div>
+<h3>Telha Cerâmica Francesa</h3>
+<p>Cobertura tradicional com estética clássica e durabilidade.</p>
+<div class="preco">R$ 3,00 a R$ 6,00/un</div>
+</div>
+
+<div class="material">
+<div class="icone">🏘️</div>
+<h3>Telha Cerâmica Portuguesa</h3>
+<p>Cobertura colonial com ótima impermeabilização.</p>
+<div class="preco">R$ 4,00 a R$ 7,00/un</div>
+</div>
+
+<div class="material">
+<div class="icone">🏘️</div>
+<h3>Telha de Concreto</h3>
+<p>Cobertura econômica com boa resistência e durabilidade.</p>
+<div class="preco">R$ 2,00 a R$ 4,00/un</div>
+</div>
+
+<div class="material">
+<div class="icone">🏘️</div>
+<h3>Telha Metálica Galvanizada</h3>
+<p>Cobertura leve e resistente para estruturas metálicas.</p>
+<div class="preco">R$ 25,00 a R$ 50,00/chapa</div>
 </div>
 
 <div class="material">
 <div class="icone">🪟</div>
-<h3>Vidros e Esquadrias</h3>
-<p>Vidros temperados e esquadrias de alumínio para janelas e portas. Designs modernos e resistentes.</p>
-<div class="preco">R$ 200,00 a R$ 800,00 / unidade</div>
+<h3>Vidro Temperado 6mm</h3>
+<p>Segurança em janelas e portas com alta resistência.</p>
+<div class="preco">R$ 180,00 a R$ 350,00/m²</div>
+</div>
+
+<div class="material">
+<div class="icone">🪟</div>
+<h3>Vidro Temperado 8mm</h3>
+<p>Maior espessura. Proteção máxima em estruturas.</p>
+<div class="preco">R$ 220,00 a R$ 420,00/m²</div>
+</div>
+
+<div class="material">
+<div class="icone">🪟</div>
+<h3>Vidro Laminado</h3>
+<p>Segurança máxima com camada de proteção entre lâminas.</p>
+<div class="preco">R$ 250,00 a R$ 500,00/m²</div>
+</div>
+
+<div class="material">
+<div class="icone">🏗️</div>
+<h3>Esquadrias de Alumínio</h3>
+<p>Janelas e portas com design moderno e durabilidade.</p>
+<div class="preco">R$ 400,00 a R$ 1.200,00/un</div>
+</div>
+
+<div class="material">
+<div class="icone">🏗️</div>
+<h3>Esquadrias de Madeira</h3>
+<p>Acabamento tradicional para janelas e portas internas.</p>
+<div class="preco">R$ 300,00 a R$ 900,00/un</div>
+</div>
+
+<div class="material">
+<div class="icone">🎨</div>
+<h3>Tinta Látex Acrílica</h3>
+<p>Acabamento liso para paredes internas e externas.</p>
+<div class="preco">R$ 40,00 a R$ 80,00/lata 18L</div>
+</div>
+
+<div class="material">
+<div class="icone">🎨</div>
+<h3>Tinta Esmalte Sintético</h3>
+<p>Acabamento brilhante para estruturas metálicas e madeira.</p>
+<div class="preco">R$ 50,00 a R$ 100,00/lata 18L</div>
+</div>
+
+<div class="material">
+<div class="icone">🎨</div>
+<h3>Tinta Acrílica Exterior</h3>
+<p>Proteção contra intempéries para fachadas.</p>
+<div class="preco">R$ 60,00 a R$ 120,00/lata 18L</div>
+</div>
+
+<div class="material">
+<div class="icone">🧤</div>
+<h3>Impermeabilizante Líquido</h3>
+<p>Proteção de alicerces e estruturas em contato com água.</p>
+<div class="preco">R$ 80,00 a R$ 150,00/balde 18L</div>
+</div>
+
+<div class="material">
+<div class="icone">🧤</div>
+<h3>Manta Asfáltica</h3>
+<p>Impermeabilização em estruturas de concreto.</p>
+<div class="preco">R$ 60,00 a R$ 100,00/rolo</div>
+</div>
+
+<div class="material">
+<div class="icone">🧤</div>
+<h3>Rejunte Cinza</h3>
+<p>Preenchimento de juntas em cerâmica e azulejos.</p>
+<div class="preco">R$ 25,00 a R$ 45,00/saco 5kg</div>
+</div>
+
+<div class="material">
+<div class="icone">🧤</div>
+<h3>Rejunte Branco</h3>
+<p>Acabamento fino para ambientes claros e modernos.</p>
+<div class="preco">R$ 30,00 a R$ 50,00/saco 5kg</div>
+</div>
+
+<div class="material">
+<div class="icone">🧱</div>
+<h3>Cerâmica 30x30</h3>
+<p>Acabamento em piso interno com ótima durabilidade.</p>
+<div class="preco">R$ 25,00 a R$ 50,00/m²</div>
+</div>
+
+<div class="material">
+<div class="icone">🧱</div>
+<h3>Azulejo Branco 20x20</h3>
+<p>Acabamento em paredes de banheiro e cozinha.</p>
+<div class="preco">R$ 20,00 a R$ 40,00/m²</div>
+</div>
+
+<div class="material">
+<div class="icone">🧱</div>
+<h3>Piso Porcelanato 60x60</h3>
+<p>Acabamento premium com alta resistência a impactos.</p>
+<div class="preco">R$ 60,00 a R$ 150,00/m²</div>
+</div>
+
+<div class="material">
+<div class="icone">🔨</div>
+<h3>Cola para Madeira</h3>
+<p>Fixação permanente de estruturas e acabamentos em madeira.</p>
+<div class="preco">R$ 25,00 a R$ 50,00/litro</div>
+</div>
+
+<div class="material">
+<div class="icone">🔨</div>
+<h3>Adesivo para Cerâmica</h3>
+<p>Fixação de azulejos e cerâmicas em paredes e pisos.</p>
+<div class="preco">R$ 35,00 a R$ 60,00/saco 20kg</div>
+</div>
+
+<div class="material">
+<div class="icone">🔨</div>
+<h3>Massa Corrida</h3>
+<p>Acabamento fino de paredes antes da pintura final.</p>
+<div class="preco">R$ 30,00 a R$ 50,00/balde 20kg</div>
+</div>
+
+<div class="material">
+<div class="icone">💨</div>
+<h3>Tubo PVC Soldável 50mm</h3>
+<p>Encanamento de água e esgoto em construções diversas.</p>
+<div class="preco">R$ 15,00 a R$ 30,00/metro</div>
+</div>
+
+<div class="material">
+<div class="icone">💨</div>
+<h3>Tubo PVC Rosqueável 25mm</h3>
+<p>Encanamento com conexões roscadas para facilitar manutenção.</p>
+<div class="preco">R$ 12,00 a R$ 25,00/metro</div>
+</div>
+
+<div class="material">
+<div class="icone">⚡</div>
+<h3>Fio Elétrico 2,5 mm²</h3>
+<p>Instalação elétrica residencial com segurança.</p>
+<div class="preco">R$ 2,00 a R$ 4,00/metro</div>
+</div>
+
+<div class="material">
+<div class="icone">⚡</div>
+<h3>Cano Corrugado para Fiação</h3>
+<p>Proteção de fios elétricos em estruturas diversas.</p>
+<div class="preco">R$ 1,50 a R$ 3,50/metro</div>
+</div>
+
+<div class="material">
+<div class="icone">🔧</div>
+<h3>Dobradiça de Porta</h3>
+<p>Fixação de portas e portais com qualidade e segurança.</p>
+<div class="preco">R$ 15,00 a R$ 40,00/un</div>
+</div>
+
+<div class="material">
+<div class="icone">🔧</div>
+<h3>Fechadura Residencial</h3>
+<p>Segurança em portas internas com acabamento fino.</p>
+<div class="preco">R$ 50,00 a R$ 150,00/un</div>
+</div>
+
+<div class="material">
+<div class="icone">🔧</div>
+<h3>Maçaneta de Alumínio</h3>
+<p>Acabamento moderno para portas internas e externas.</p>
+<div class="preco">R$ 25,00 a R$ 80,00/un</div>
+</div>
+
+<div class="material">
+<div class="icone">🧱</div>
+<h3>Gesso em Placa</h3>
+<p>Drywall para paredes internas e forros suspensos.</p>
+<div class="preco">R$ 25,00 a R$ 45,00/placa 1,2x2,4m</div>
+</div>
+
+<div class="material">
+<div class="icone">🧱</div>
+<h3>Reboco Pronto</h3>
+<p>Acabamento rápido de revestimentos em parede.</p>
+<div class="preco">R$ 40,00 a R$ 70,00/saco 20kg</div>
 </div>
 
 </div>
