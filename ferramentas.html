@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ferramentas — Glunder Construção Civil</title>
+<title>Ferramentas — L&L Construção Civil</title>
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
@@ -14,128 +14,518 @@ header p{color:#ddd}
 nav{background:#444;padding:12px;text-align:center}
 nav a{color:white;text-decoration:none;font-weight:bold;margin:5px 8px;display:inline-block}
 nav a:hover{color:#ffc107}
-section{max-width:1100px;margin:auto;padding:50px 20px}
+section{max-width:1200px;margin:auto;padding:50px 20px}
 .titulo{text-align:center;margin-bottom:35px}
 .titulo h2{font-size:32px;color:#222}
 .titulo p{color:#666}
-.lista{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
-.ferramenta{background:white;padding:25px;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,.1);border-left:4px solid #ffc107}
-.ferramenta h3{margin-bottom:10px;color:#222;font-size:18px}
-.ferramenta p{color:#666;margin-bottom:8px;font-size:14px}
-.preco{font-size:20px;font-weight:bold;color:#ffc107;margin-top:15px}
-.icone{font-size:40px;margin-bottom:10px}
+.lista{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.ferramenta{background:white;padding:20px;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,.1);border-left:4px solid #ffc107;transition:transform 0.3s}
+.ferramenta:hover{transform:translateY(-5px)}
+.ferramenta-header{display:flex;align-items:center;gap:15px;margin-bottom:12px}
+.icone{font-size:45px;min-width:45px}
+.ferramenta h3{margin:0;color:#222;font-size:18px}
+.ferramenta p{color:#666;margin:8px 0;font-size:13px}
+.preco{font-size:18px;font-weight:bold;color:#ffc107;margin-top:12px}
 footer{background:#222;color:white;text-align:center;padding:20px;margin-top:30px}
 .contato-info{margin-top:15px;font-size:14px;color:#ddd}
+.botao-whatsapp{display:inline-block;background:#25d366;color:white;padding:10px 20px;border-radius:5px;text-decoration:none;font-weight:bold;margin-top:20px}
+.botao-whatsapp:hover{background:#20ba5a}
 </style>
 </head>
 
 <body>
 
 <header>
-<h1>Glunder Construção Civil</h1>
+<h1>L&L Construção Civil</h1>
 <p>Qualidade, profissionalismo e confiança</p>
 </header>
 
 <nav>
 <a href="index.html">Início</a>
-<a href="servicos-realizados.html">Serviços Realizados</a>
-<a href="sobre-nos.html">Sobre Nós</a>
-<a href="nossos-servicos.html">Nossos Serviços</a>
+<a href="sobre.html">Sobre Nós</a>
+<a href="servicos.html">Serviços</a>
+<a href="galeria.html">Obras</a>
 <a href="ferramentas.html">Ferramentas</a>
-<a href="materiais.html">Materiais</a>
+<a href="material.html">Materiais</a>
+<a href="orcamento.html">Orçamento</a>
+<a href="contato.html">Contato</a>
 </nav>
 
 <section>
 
 <div class="titulo">
-<h2>Ferramentas para Obra</h2>
-<p>Conheça as ferramentas que utilizamos em nossos trabalhos de construção civil.</p>
+<h2>Ferramentas de Construção Civil</h2>
+<p>Disponibilizamos ferramentas profissionais de qualidade superior para sua obra.</p>
 </div>
 
 <div class="lista">
 
 <div class="ferramenta">
+<div class="ferramenta-header">
 <div class="icone">🔨</div>
-<h3>Marreta e Martelo</h3>
-<p>Ferramentas essenciais para demolição, ajustes e acabamentos em qualquer obra.</p>
+<h3>Marreta</h3>
+</div>
+<p>Ferramenta essencial para demolição, ajustes e acabamentos em qualquer obra.</p>
 <div class="preco">Aluguel: R$ 25,00/dia</div>
 </div>
 
 <div class="ferramenta">
-<div class="icone">🔧</div>
-<h3>Chave Inglesa e Jogo de Chaves</h3>
-<p>Ferramentas de alta precisão para trabalhos de instalação e manutenção.</p>
+<div class="ferramenta-header">
+<div class="icone">🔨</div>
+<h3>Martelo</h3>
+</div>
+<p>Martelo de precisão para fixação de pregos e ajustes delicados.</p>
+<div class="preco">Aluguel: R$ 15,00/dia</div>
+</div>
+
+<div class="ferramenta">
+<div class="ferramenta-header">
+<div class="icone">🪛</div>
+<h3>Furadeira Manual</h3>
+</div>
+<p>Ferramenta manual para perfurações em diversos materiais sem necessidade de energia.</p>
 <div class="preco">Aluguel: R$ 20,00/dia</div>
 </div>
 
 <div class="ferramenta">
+<div class="ferramenta-header">
 <div class="icone">⚙️</div>
 <h3>Furadeira Elétrica Profissional</h3>
+</div>
 <p>Equipamento de alta potência para perfurações em concreto, alvenaria e metal.</p>
 <div class="preco">Aluguel: R$ 60,00/dia</div>
 </div>
 
 <div class="ferramenta">
+<div class="ferramenta-header">
+<div class="icone">🔧</div>
+<h3>Chave Inglesa</h3>
+</div>
+<p>Ferramenta versátil para aperto e soltura de porcas e parafusos diversos.</p>
+<div class="preco">Aluguel: R$ 15,00/dia</div>
+</div>
+
+<div class="ferramenta">
+<div class="ferramenta-header">
+<div class="icone">🔧</div>
+<h3>Jogo de Chaves Francesas</h3>
+</div>
+<p>Conjunto com múltiplos tamanhos para diferentes peças.</p>
+<div class="preco">Aluguel: R$ 20,00/dia</div>
+</div>
+
+<div class="ferramenta">
+<div class="ferramenta-header">
+<div class="icone">🔩</div>
+<h3>Chave de Fenda Simples</h3>
+</div>
+<p>Ferramenta para parafusos de fenda reta diversos tamanhos.</p>
+<div class="preco">Aluguel: R$ 10,00/dia</div>
+</div>
+
+<div class="ferramenta">
+<div class="ferramenta-header">
+<div class="icone">🔩</div>
+<h3>Chave Phillips (Cruzeta)</h3>
+</div>
+<p>Para parafusos com fenda em cruz, tamanhos variados.</p>
+<div class="preco">Aluguel: R$ 10,00/dia</div>
+</div>
+
+<div class="ferramenta">
+<div class="ferramenta-header">
 <div class="icone">🪛</div>
 <h3>Jogo de Brocas Variadas</h3>
+</div>
 <p>Brocas de diferentes tamanhos e materiais para diversos tipos de superfícies.</p>
 <div class="preco">Aluguel: R$ 15,00/dia</div>
 </div>
 
 <div class="ferramenta">
+<div class="ferramenta-header">
+<div class="icone">⚙️</div>
+<h3>Parafusadeira Elétrica</h3>
+</div>
+<p>Equipamento profissional para aparafusamento rápido e preciso.</p>
+<div class="preco">Aluguel: R$ 50,00/dia</div>
+</div>
+
+<div class="ferramenta">
+<div class="ferramenta-header">
 <div class="icone">🧰</div>
 <h3>Caixa de Ferramentas Completa</h3>
-<p>Kit com principais ferramentas manuais para pequenos reparos e ajustes.</p>
+</div>
+<p>Kit com principais ferramentas manuais para reparos e ajustes em geral.</p>
 <div class="preco">Aluguel: R$ 35,00/dia</div>
 </div>
 
 <div class="ferramenta">
+<div class="ferramenta-header">
+<div class="icone">📏</div>
+<h3>Fita Métrica</h3>
+</div>
+<p>Medição de até 10 metros com precisão em acabamentos e estruturas.</p>
+<div class="preco">Aluguel: R$ 10,00/dia</div>
+</div>
+
+<div class="ferramenta">
+<div class="ferramenta-header">
+<div class="icone">📏</div>
+<h3>Trena Laser</h3>
+</div>
+<p>Instrumentos de medição digital para máxima precisão em toda a obra.</p>
+<div class="preco">Aluguel: R$ 40,00/dia</div>
+</div>
+
+<div class="ferramenta">
+<div class="ferramenta-header">
+<div class="icone">🔩</div>
+<h3>Nivelador a Bolha</h3>
+</div>
+<p>Equipamento simples para alinhamento e nivelamento básico.</p>
+<div class="preco">Aluguel: R$ 20,00/dia</div>
+</div>
+
+<div class="ferramenta">
+<div class="ferramenta-header">
 <div class="icone">🔩</div>
 <h3>Nivelador Laser</h3>
-<p>Equipamento de precisão para alinhamento e nivelamento em projetos de construção.</p>
+</div>
+<p>Equipamento de precisão para alinhamento e nivelamento em projetos complexos.</p>
 <div class="preco">Aluguel: R$ 80,00/dia</div>
 </div>
 
 <div class="ferramenta">
+<div class="ferramenta-header">
 <div class="icone">🪜</div>
-<h3>Picareta e Enxadão</h3>
-<p>Ferramentas para escavação e remoção de terra em preparação de terreno.</p>
+<h3>Picareta</h3>
+</div>
+<p>Ferramenta para escavação e remoção de rochas em preparação de terreno.</p>
 <div class="preco">Aluguel: R$ 18,00/dia</div>
 </div>
 
 <div class="ferramenta">
-<div class="icone">📏</div>
-<h3>Fita Métrica e Trena Laser</h3>
-<p>Instrumentos de medição para precisão em toda a obra.</p>
-<div class="preco">Aluguel: R$ 30,00/dia</div>
+<div class="ferramenta-header">
+<div class="icone">🪜</div>
+<h3>Enxadão</h3>
+</div>
+<p>Ferramenta robusta para escavação e remoção de terra compacta.</p>
+<div class="preco">Aluguel: R$ 15,00/dia</div>
 </div>
 
 <div class="ferramenta">
-<div class="icone">🪜</div>
-<h3>Ponteira e Cinzel</h3>
-<p>Ferramentas para trabalhos de precisão em alvenaria e acabamento.</p>
+<div class="ferramenta-header">
+<div class="icone">⛏️</div>
+<h3>Pá Quadrada</h3>
+</div>
+<p>Ferramenta para movimentação de terra, areia e materiais diversos.</p>
 <div class="preco">Aluguel: R$ 12,00/dia</div>
 </div>
 
 <div class="ferramenta">
-<div class="icone">🏗️</div>
-<h3>Andaime Metálico</h3>
-<p>Estrutura segura para trabalhos em altura com capacidade de carga elevada.</p>
-<div class="preco">Aluguel: R$ 120,00/dia</div>
-</div>
-
-<div class="ferramenta">
+<div class="ferramenta-header">
 <div class="icone">⛏️</div>
-<h3>Pá e Enxada de Trabalho</h3>
-<p>Ferramentas robustas para escavação, movimentação de terra e materiais diversos.</p>
-<div class="preco">Aluguel: R$ 16,00/dia</div>
+<h3>Pá Redonda</h3>
+</div>
+<p>Ideal para escavação de furos profundos e remoção de materiais.</p>
+<div class="preco">Aluguel: R$ 12,00/dia</div>
 </div>
 
 <div class="ferramenta">
+<div class="ferramenta-header">
+<div class="icone">⛏️</div>
+<h3>Enxada de Trabalho</h3>
+</div>
+<p>Ferramenta versátil para diversos tipos de trabalho em terra e acabamento.</p>
+<div class="preco">Aluguel: R$ 10,00/dia</div>
+</div>
+
+<div class="ferramenta">
+<div class="ferramenta-header">
+<div class="icone">🪜</div>
+<h3>Ponteira</h3>
+</div>
+<p>Ferramenta para trabalhos de precisão em alvenaria e acabamento fino.</p>
+<div class="preco">Aluguel: R$ 8,00/dia</div>
+</div>
+
+<div class="ferramenta">
+<div class="ferramenta-header">
+<div class="icone">🪜</div>
+<h3>Cinzel</h3>
+</div>
+<p>Ferramenta para esculpimento e remoção precisa de materiais em construção.</p>
+<div class="preco">Aluguel: R$ 8,00/dia</div>
+</div>
+
+<div class="ferramenta">
+<div class="ferramenta-header">
 <div class="icone">🔨</div>
+<h3>Malhete (Martelinho de Borracha)</h3>
+</div>
+<p>Ferramenta para ajustes sem danificar superfícies delicadas.</p>
+<div class="preco">Aluguel: R$ 12,00/dia</div>
+</div>
+
+<div class="ferramenta">
+<div class="ferramenta-header">
+<div class="icone">🪜</div>
+<h3>Pé de Cabra</h3>
+</div>
+<p>Ferramenta para remoção de pregos, puxada de madeiras e demolição.</p>
+<div class="preco">Aluguel: R$ 15,00/dia</div>
+</div>
+
+<div class="ferramenta">
+<div class="ferramenta-header">
+<div class="icone">🏗️</div>
+<h3>Escada de Madeira 3 Degraus</h3>
+</div>
+<p>Escada segura para trabalhos baixos e médios em altitude.</p>
+<div class="preco">Aluguel: R$ 25,00/dia</div>
+</div>
+
+<div class="ferramenta">
+<div class="ferramenta-header">
+<div class="icone">🏗️</div>
+<h3>Escada de Madeira 6 Degraus</h3>
+</div>
+<p>Escada para trabalhos de média altura com segurança.</p>
+<div class="preco">Aluguel: R$ 35,00/dia</div>
+</div>
+
+<div class="ferramenta">
+<div class="ferramenta-header">
+<div class="icone">🏗️</div>
 <h3>Escada Extensível Profissional</h3>
-<p>Escada de alumínio resistente para acesso seguro em diferentes alturas.</p>
+</div>
+<p>Escada de alumínio ajustável para acesso seguro em diferentes alturas.</p>
 <div class="preco">Aluguel: R$ 50,00/dia</div>
+</div>
+
+<div class="ferramenta">
+<div class="ferramenta-header">
+<div class="icone">🏗️</div>
+<h3>Andaime Metálico Simples</h3>
+</div>
+<p>Estrutura resistente para trabalhos em altura com estabilidade superior.</p>
+<div class="preco">Aluguel: R$ 100,00/dia</div>
+</div>
+
+<div class="ferramenta">
+<div class="ferramenta-header">
+<div class="icone">🏗️</div>
+<h3>Andaime Metálico Duplo</h3>
+</div>
+<p>Estrutura segura para trabalhos em altura com capacidade de carga elevada.</p>
+<div class="preco">Aluguel: R$ 150,00/dia</div>
+</div>
+
+<div class="ferramenta">
+<div class="ferramenta-header">
+<div class="icone">🪣</div>
+<h3>Balde de Obra 20L</h3>
+</div>
+<p>Recipiente resistente para transporte de água, argamassa e materiais.</p>
+<div class="preco">Aluguel: R$ 5,00/dia</div>
+</div>
+
+<div class="ferramenta">
+<div class="ferramenta-header">
+<div class="icone">🪣</div>
+<h3>Carrinho de Mão</h3>
+</div>
+<p>Transporte eficiente de materiais pesados pelo canteiro de obras.</p>
+<div class="preco">Aluguel: R$ 20,00/dia</div>
+</div>
+
+<div class="ferramenta">
+<div class="ferramenta-header">
+<div class="icone">⚙️</div>
+<h3>Betoneira Manual</h3>
+</div>
+<p>Equipamento para mistura manual de concreto e argamassa em pequenas quantidades.</p>
+<div class="preco">Aluguel: R$ 40,00/dia</div>
+</div>
+
+<div class="ferramenta">
+<div class="ferramenta-header">
+<div class="icone">⚙️</div>
+<h3>Betoneira Motorizada</h3>
+</div>
+<p>Misturador elétrico de alta capacidade para concreto e argamassa em quantidade.</p>
+<div class="preco">Aluguel: R$ 80,00/dia</div>
+</div>
+
+<div class="ferramenta">
+<div class="ferramenta-header">
+<div class="icone">🪴</div>
+<h3>Desempenadeira de Madeira</h3>
+</div>
+<p>Ferramenta para regularização e acabamento de concreto fresco.</p>
+<div class="preco">Aluguel: R$ 10,00/dia</div>
+</div>
+
+<div class="ferramenta">
+<div class="ferramenta-header">
+<div class="icone">🪴</div>
+<h3>Desempenadeira de Alumínio</h3>
+</div>
+<p>Ferramenta leve e resistente para acabamento de reboco e massas.</p>
+<div class="preco">Aluguel: R$ 12,00/dia</div>
+</div>
+
+<div class="ferramenta">
+<div class="ferramenta-header">
+<div class="icone">🪣</div>
+<h3>Peneira de Areia</h3>
+</div>
+<p>Equipamento para peneiração e seleção de areia de construção.</p>
+<div class="preco">Aluguel: R$ 25,00/dia</div>
+</div>
+
+<div class="ferramenta">
+<div class="ferramenta-header">
+<div class="icone">⚙️</div>
+<h3>Vibrador de Concreto</h3>
+</div>
+<p>Equipamento profissional para adensamento de concreto em estruturas.</p>
+<div class="preco">Aluguel: R$ 70,00/dia</div>
+</div>
+
+<div class="ferramenta">
+<div class="ferramenta-header">
+<div class="icone">💡</div>
+<h3>Lanterna/Iluminação Profissional</h3>
+</div>
+<p>Iluminação potente para trabalhos em áreas com pouca luz.</p>
+<div class="preco">Aluguel: R$ 15,00/dia</div>
+</div>
+
+<div class="ferramenta">
+<div class="ferramenta-header">
+<div class="icone">🧤</div>
+<h3>Luvas de Proteção (Par)</h3>
+</div>
+<p>Proteção essencial para as mãos durante trabalhos de construção.</p>
+<div class="preco">Venda: R$ 8,00 a R$ 15,00</div>
+</div>
+
+<div class="ferramenta">
+<div class="ferramenta-header">
+<div class="icone">🛡️</div>
+<h3>Óculos de Segurança</h3>
+</div>
+<p>Proteção ocular contra partículas e respingos durante a obra.</p>
+<div class="preco">Venda: R$ 20,00 a R$ 40,00</div>
+</div>
+
+<div class="ferramenta">
+<div class="ferramenta-header">
+<div class="icone">🎽</div>
+<h3>Colete de Segurança</h3>
+</div>
+<p>Equipamento de proteção individual para trabalhos em altura.</p>
+<div class="preco">Aluguel: R$ 30,00/dia</div>
+</div>
+
+<div class="ferramenta">
+<div class="ferramenta-header">
+<div class="icone">👷</div>
+<h3>Capacete de Proteção</h3>
+</div>
+<p>Proteção da cabeça contra impactos e queda de objetos.</p>
+<div class="preco">Aluguel: R$ 10,00/dia</div>
+</div>
+
+<div class="ferramenta">
+<div class="ferramenta-header">
+<div class="icone">👢</div>
+<h3>Bota de Segurança</h3>
+</div>
+<p>Calçado reforçado com proteção contra impactos e perfurações.</p>
+<div class="preco">Aluguel: R$ 15,00/dia</div>
+</div>
+
+<div class="ferramenta">
+<div class="ferramenta-header">
+<div class="icone">🪚</div>
+<h3>Escova de Aço</h3>
+</div>
+<p>Limpeza de superfícies, remoção de ferrugem e oxidação.</p>
+<div class="preco">Aluguel: R$ 8,00/dia</div>
+</div>
+
+<div class="ferramenta">
+<div class="ferramenta-header">
+<div class="icone">🪚</div>
+<h3>Esponja Abrasiva</h3>
+</div>
+<p>Material abrasivo para limpeza e acabamento de superfícies.</p>
+<div class="preco">Venda: R$ 2,00 a R$ 5,00</div>
+</div>
+
+<div class="ferramenta">
+<div class="ferramenta-header">
+<div class="icone">🧹</div>
+<h3>Vassoura Industrial</h3>
+</div>
+<p>Limpeza eficiente do canteiro de obras e remoção de detritos.</p>
+<div class="preco">Aluguel: R$ 5,00/dia</div>
+</div>
+
+<div class="ferramenta">
+<div class="ferramenta-header">
+<div class="icone">🪣</div>
+<h3>Pá de Lixo/Apanhador</h3>
+</div>
+<p>Coleta eficiente de detritos e resíduos da obra.</p>
+<div class="preco">Aluguel: R$ 5,00/dia</div>
+</div>
+
+<div class="ferramenta">
+<div class="ferramenta-header">
+<div class="icone">🔌</div>
+<h3>Cabo de Extensão 20m</h3>
+</div>
+<p>Extensão elétrica profissional com proteção e segurança.</p>
+<div class="preco">Aluguel: R$ 20,00/dia</div>
+</div>
+
+<div class="ferramenta">
+<div class="ferramenta-header">
+<div class="icone">🔌</div>
+<h3>Gerador de Energia Portátil</h3>
+</div>
+<p>Fonte de energia independente para ferramentas e iluminação.</p>
+<div class="preco">Aluguel: R$ 100,00/dia</div>
+</div>
+
+<div class="ferramenta">
+<div class="ferramenta-header">
+<div class="icone">🔨</div>
+<h3>Série de Chaves de Fenda (10 peças)</h3>
+</div>
+<p>Conjunto completo com diferentes tamanhos e tipos.</p>
+<div class="preco">Aluguel: R$ 25,00/dia</div>
+</div>
+
+<div class="ferramenta">
+<div class="ferramenta-header">
+<div class="icone">🔧</div>
+<h3>Jogo de Chaves Fixas (15 peças)</h3>
+</div>
+<p>Conjunto profissional com múltiplos tamanhos de chaves fixas.</p>
+<div class="preco">Aluguel: R$ 30,00/dia</div>
+</div>
+
+<div class="ferramenta">
+<div class="ferramenta-header">
+<div class="icone">⚙️</div>
+<h3>Chave de Tubo (Cano)</h3>
+</div>
+<p>Ferramenta especializada para encanamento e tubulações.</p>
+<div class="preco">Aluguel: R$ 15,00/dia</div>
 </div>
 
 </div>
@@ -143,10 +533,13 @@ footer{background:#222;color:white;text-align:center;padding:20px;margin-top:30p
 </section>
 
 <footer>
-<p>© 2026 Glunder Construção Civil — Todos os direitos reservados</p>
+<p>© 2026 L&L Construção Civil — Todos os direitos reservados</p>
 
 <div class="contato-info">
-    <p>Contato: (xx) xxxx-xxxx</p>
+    <p><i class="fab fa-whatsapp"></i> WhatsApp: (51) 98162-1606</p>
+    <p><i class="fas fa-envelope"></i> E-mail: L.Lconstrucaocivil666@gmail.com</p>
+    <p><i class="fas fa-map-marker-alt"></i> Gravataí — RS</p>
+    <a href="https://wa.me/5551981621606?text=Ol%C3%A1%21%20Gostaria%20de%20alugar%20ferramentas%20para%20minha%20obra." target="_blank" class="botao-whatsapp">Consulte-nos via WhatsApp</a>
 </div>
 </footer>
 
